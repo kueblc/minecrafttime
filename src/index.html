@@ -11,7 +11,7 @@
 				overflow: hidden;
 			}
 			body {
-				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYElEQVQ4T32Ty0rDUBCG8yilCja30zRtXSvGFmmKCt4WvoW4aVF0I9LuRBDcKYjufMSj38RJT5Li4uNcZ+afOXM8f7Nte1GnwrAbCgMTVNZ1ttot6zGZ7wf2fhzZ21EoI1ztdBroPiM2OBcHDwexbLgsp0lp+HycCuwt8q7MsREH/TiwN6PAPk6MnWWBwHwdsz1fYI7aQeQXCohC1OvdYlzkxi4nsX05NCV341Ciz7NCHWlg6yEDBxxyAB9n6Vo40xSxqdRAc/y+3BbeT3vC53lawr7WAxtRQB5PeVzm+XaS/Iveq9RAFYBGR/LXRV9w03AVSApaA83t9ciIk3pkwDHGjRpQUS2gqtDoLnpHX0EckAd9wCu4PaBFVDiXO399gE2jBhQGVGK9O6VPsiLY6hVMcVlb1EVbWWW7ztjHtvxM7qfBO9Tn5K1rbERBZ6MlucDwF/4G6FzPgHUSru5QxB/KlOZ+YrScSAAAAABJRU5ErkJggg==);
+				background: url(itemframe_background.png);
 				background-size: cover;
 				background-position: center;
 				position: relative;
@@ -47,8 +47,8 @@
 		</style>
 	</head>
 	<body>
-		<img id="dial" alt="dial" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEVERA/e3pA6U6zMzADh4eH//wBJaNgzMwsYFhZychiwbCm+vikC62LpAAAANklEQVQI12NQggIGrAxlIygjNDQJzFALDU2DMFLDoIwkJRCjAwpAjCYNKEOpA50Bl4IrRmUAAAkyK5VJa6ltAAAAAElFTkSuQmCC"/>
-		<img id="face" alt="face" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUYFhZERA/e3pBWVm3h4eEeHBxsbIkzMws6U6xychiwbCm+vils8W28AAAAAXRSTlMAQObYZgAAAGdJREFUCNdjYGBgEBRkAANBJSUwi1GJgUFJAMgQAvEcYQx1oIwCiMFSgMJgUQAzVBiYFBicChjYlVycVFyUgIxJSkCgCWRoghizChgYimYqKc1cDtTJ7j1z5q4CkBnlu3eXQ6wvB9EALvYR+g4F/UcAAAAASUVORK5CYII="/>
+		<img id="dial" alt="dial" src="clock_dial_16.png"/>
+		<img id="face" alt="face" src="clock_face_16.png"/>
 		<input id="time" type="range" min="0" max="1200" step="18.75" oninput="dial.style.animationDelay=(-this.value)+'s'"/>
 		<script>
 			
