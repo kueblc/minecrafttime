@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
-console.time("Took")
-
-const fs = require('fs')
 const SRC_DIR = "src/"
 const INPUT = "index.html"
 const OUTPUT = "index.html"
+
+console.time("Took")
+
+const fs = require('fs')
+const minify = require('html-minifier').minify
 
 function toDataURI( filename ){
 	var raw = fs.readFileSync( SRC_DIR + filename )
@@ -18,7 +20,16 @@ function replaceAll( filename ){
 }
 
 console.log("Compiling...")
-fs.writeFileSync( OUTPUT, replaceAll( SRC_DIR + INPUT ) )
+fs.writeFileSync( OUTPUT,
+	minify(
+		replaceAll( SRC_DIR + INPUT ),
+		{
+			collapseWhitespace: true,
+			minifyCSS: true,
+			minifyJS: true
+		}
+	)
+)
 console.log("Done.")
 
 console.timeEnd("Took")

@@ -1,0 +1,22 @@
+{
+  "name": "minecrafttime",
+  "version": "1.0.0",
+  "description": "Micro web app showing in game Minecraft time",
+  "main": "build.js",
+  "scripts": {
+    "test": "firefox index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kueblc/minecrafttime.git"
+  },
+  "author": "drtmv",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kueblc/minecrafttime/issues"
+  },
+  "homepage": "https://github.com/kueblc/minecrafttime#readme",
+  "dependencies": {
+    "html-minifier": "^3.5.15"
+  }
+}
